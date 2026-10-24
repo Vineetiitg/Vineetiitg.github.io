@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vineet Tiwari &mdash; AI/ML Engineer</title>
+  <meta name="description" content="AI/ML Engineer pursuing dual degrees in CS & AI at IIT Guwahati and MITS Gwalior. Building production LLM applications, LangGraph agentic systems, and low-latency backends.">
+  <meta name="author" content="Vineet Tiwari">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Minimal Fonts: Elegant Serif headline + Crisp sans + Monospace -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Immediate Theme Initializer to prevent flash -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('vt_theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo" aria-label="Vineet Tiwari Home">
+        <span class="logo-box">VT</span>
+        <span class="brand-text">vineet<span class="brand-dot">.</span>ai</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Switch theme">
+          <svg class="theme-icon sun-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="theme-icon moon-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="mailto:vineettiwari971@gmail.com" class="btn btn-outline btn-sm">
+          <span>Get in Touch</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <nav class="mobile-nav">
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#skills" class="mobile-nav-link">Skills</a>
+      <a href="#achievements" class="mobile-nav-link">Achievements</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+      <div class="mobile-drawer-footer">
+        <button class="btn btn-secondary btn-full mobile-theme-btn" id="mobileThemeToggle">
+          <span class="theme-text-dark">Switch to Pale Gray-Green Mode</span>
+          <span class="theme-text-light">Switch to Pitch Black Mode</span>
+        </button>
+        <a href="mailto:vineettiwari971@gmail.com" class="btn btn-primary btn-full" style="margin-top: 10px;">Email Vineet</a>
+      </div>
+    </nav>
+  </div>
+
+  <main id="main-content">
+
+    <!-- HERO SECTION (Minimalist & Direct) -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <div class="status-pill animate-fade-in">
+          <span class="status-dot"></span>
+          <span>Open for Summer 2026 SWE & AI/ML Internships</span>
+        </div>
+
+        <h1 class="hero-name animate-fade-in delay-1">Vineet Tiwari</h1>
+        <p class="hero-tagline animate-fade-in delay-2">
+          AI/ML Engineer &bull; Dual-Degree Scholar in CS &amp; AI
+        </p>
+
+        <p class="hero-bio animate-fade-in delay-2">
+          Pursuing concurrent degrees at <strong>IIT Guwahati</strong> and <strong>MITS Gwalior</strong>. I design self-correcting agentic workflows, hybrid RAG pipelines, fine-tuned NLP transformers, and low-latency microservices.
+        </p>
+
+        <div class="hero-actions animate-fade-in delay-3">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <span class="btn-arrow">&darr;</span>
+          </a>
+          <div class="social-icons-strip">
+            <a href="https://github.com/Vineetiitg" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile" title="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/vineet-tiwari971/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="https://x.com/VINEETTIWARI971" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Twitter / X Profile" title="Twitter / X">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="mailto:vineettiwari971@gmail.com" class="social-icon-btn copy-btn" data-copy="vineettiwari971@gmail.com" aria-label="Email Address" title="Copy Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT & EDUCATION (Compact & High-Signal) -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-badge">01 // Background</div>
+        <h2 class="section-heading">Education &amp; Focus</h2>
+        
+        <div class="education-grid">
+          
+          <div class="edu-card">
+            <div class="edu-year">2023 &mdash; 2027</div>
+            <h3 class="edu-degree">B.Sc. (Honors) in Data Science &amp; AI</h3>
+            <div class="edu-school">Indian Institute of Technology Guwahati (IITG)</div>
+            <div class="edu-grade">CPI: 7.0 / 10.0</div>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-year">2023 &mdash; 2027</div>
+            <h3 class="edu-degree">B.Tech in Computer Science &amp; Engineering</h3>
+            <div class="edu-school">Madhav Institute of Technology &amp; Science (MITS)</div>
+            <div class="edu-grade">CGPA: 8.3 / 10.0</div>
+          </div>
+
+        </div>
+
+        <!-- Quick Summary Stats Strip -->
+        <div class="quick-stats-strip">
+          <div class="stat-item">
+            <span class="stat-number">200+</span>
+            <span class="stat-label">LeetCode (C++)</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">94.8%</span>
+            <span class="stat-label">Toxicity ROC-AUC</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">&lt;10ms</span>
+            <span class="stat-label">Cache Latency</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">Top 4</span>
+            <span class="stat-label">Hacksagon '26</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION (Artifact Container Style, Crisp Bullets) -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-badge">02 // Selected Projects</div>
+        <h2 class="section-heading">Featured Work</h2>
+
+        <div class="projects-list">
+
+          <!-- PROJECT 1: SafeChat -->
+          <article class="project-artifact">
+            <div class="artifact-top-bar">
+              <span class="artifact-name">SafeChat &mdash; Real-Time Indic Toxicity Classifier</span>
+              <div class="artifact-links">
+                <a href="https://github.com/Vineetiitg/SafeChat-Multilingual-AI-Content-Moderation-Platform" target="_blank" rel="noopener noreferrer" class="link-item">GitHub &nearr;</a>
+                <a href="#projects" class="link-item highlight">Demo &nearr;</a>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">Hugging Face</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">WebSockets</span>
+                <span class="tech-tag">Gemini 2.0 Flash</span>
+              </div>
+
+              <ul class="bullet-list">
+                <li>Fine-tuned a Hinglish RoBERTa model on 37k samples, achieving <strong>94.8% ROC-AUC</strong> across English, Hindi, and Hinglish.</li>
+                <li>Used <code>MultilabelStratifiedKFold</code> and custom Weighted Focal Loss (&gamma; = 2.0), boosting rare threat class F1-score by <strong>14.15%</strong>.</li>
+                <li>Engineered a dual-model gatekeeper securing <strong>100% precision</strong> across 22 Indic benchmark sets.</li>
+                <li>Integrated Gemini 2.0 Flash for intent-preserving detoxification via an asynchronous FastAPI microservice with WebSockets.</li>
+                <li>Packaged continuous learning loop in Docker on Hugging Face Spaces with automated MongoDB Atlas logging.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Agentic Support Copilot -->
+          <article class="project-artifact">
+            <div class="artifact-top-bar">
+              <span class="artifact-name">Agentic Support Copilot &mdash; Self-Correcting AI Assistant</span>
+              <div class="artifact-links">
+                <a href="https://github.com/Vineetiitg/Agentic-Support-Copilot" target="_blank" rel="noopener noreferrer" class="link-item">GitHub &nearr;</a>
+                <a href="#projects" class="link-item highlight">Demo &nearr;</a>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">LangGraph</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">Qdrant</span>
+                <span class="tech-tag">Redis</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Guardrails AI</span>
+              </div>
+
+              <ul class="bullet-list">
+                <li>Built a cyclic <strong>LangGraph</strong> state machine with Function Calling that self-grades responses to suppress hallucination.</li>
+                <li>Implemented hybrid RAG combining dense &amp; sparse search in <strong>Qdrant</strong> with FlashRank/Cohere reranking.</li>
+                <li>Added Redis semantic vector caching for <strong>&lt;10ms</strong> repeated query responses and asynchronous Arq worker ingestion.</li>
+                <li>Enforced production security using Guardrails AI, JWT authentication, RBAC, and automated PII redaction.</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS (Clean Minimal Grid) -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-badge">03 // Technical Skills</div>
+        <h2 class="section-heading">Skills &amp; Technologies</h2>
+
+        <div class="skills-grid">
+          
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">AI &amp; Deep Learning</h3>
+            <div class="pill-cloud">
+              <span class="tech-pill">LLMs &amp; GenAI</span>
+              <span class="tech-pill">Agentic Workflows</span>
+              <span class="tech-pill">Hybrid RAG</span>
+              <span class="tech-pill">Transformers (BERT, RoBERTa, GPT)</span>
+              <span class="tech-pill">PEFT / LoRA</span>
+              <span class="tech-pill">Multi-Label Classification</span>
+              <span class="tech-pill">NLP</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">Frameworks &amp; Tooling</h3>
+            <div class="pill-cloud">
+              <span class="tech-pill highlight-pill">PyTorch</span>
+              <span class="tech-pill highlight-pill">Hugging Face</span>
+              <span class="tech-pill highlight-pill">LangGraph</span>
+              <span class="tech-pill highlight-pill">FastAPI</span>
+              <span class="tech-pill">LangChain</span>
+              <span class="tech-pill">Scikit-learn</span>
+              <span class="tech-pill">Streamlit</span>
+              <span class="tech-pill">WebSockets</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">Databases &amp; Vector Stores</h3>
+            <div class="pill-cloud">
+              <span class="tech-pill highlight-pill">Qdrant</span>
+              <span class="tech-pill highlight-pill">Redis</span>
+              <span class="tech-pill">PostgreSQL</span>
+              <span class="tech-pill">MongoDB Atlas</span>
+              <span class="tech-pill">Pinecone</span>
+              <span class="tech-pill">FAISS</span>
+            </div>
+          </div>
+
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">Languages &amp; Core CS</h3>
+            <div class="pill-cloud">
+              <span class="tech-pill highlight-pill">Python</span>
+              <span class="tech-pill highlight-pill">C++</span>
+              <span class="tech-pill">Java</span>
+              <span class="tech-pill">SQL</span>
+              <span class="tech-pill">Bash</span>
+              <span class="tech-pill">DSA</span>
+              <span class="tech-pill">System Design</span>
+              <span class="tech-pill">Docker</span>
+              <span class="tech-pill">Git / Linux</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS (Clean High-Signal List) -->
+    <section class="section" id="achievements">
+      <div class="container">
+        <div class="section-badge">04 // Recognition</div>
+        <h2 class="section-heading">Achievements</h2>
+
+        <div class="achievements-list">
+          
+          <div class="achievement-row">
+            <span class="achievement-icon">🥈</span>
+            <div class="achievement-info">
+              <div class="achievement-title">1st Runner-Up &mdash; MANTHAN 1.0 Hackathon (MANIT Bhopal)</div>
+              <div class="achievement-sub">Built a real-time AI moderation system in a 4-person team, outperforming 500+ teams.</div>
+            </div>
+          </div>
+
+          <div class="achievement-row">
+            <span class="achievement-icon">🏆</span>
+            <div class="achievement-info">
+              <div class="achievement-title">Top 4 Performer &mdash; Hacksagon Hackathon 2026 (IIITM Gwalior)</div>
+              <div class="achievement-sub">Secured 4th place out of 2,100+ participating engineering teams.</div>
+            </div>
+          </div>
+
+          <div class="achievement-row">
+            <span class="achievement-icon">⚡</span>
+            <div class="achievement-info">
+              <div class="achievement-title">200+ Algorithmic Problems Solved (LeetCode)</div>
+              <div class="achievement-sub">Extensive problem solving in C++ across Graphs, Dynamic Programming, Trees, and Heaps.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION (Minimal Icons Dock) -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-badge">05 // Contact</div>
+        <h2 class="section-heading">Get in Touch</h2>
+        <p class="section-subtext">
+          Currently open to Summer 2026 internships and collaborative engineering opportunities.
+        </p>
+
+        <div class="contact-icons-dock">
+          
+          <!-- Email -->
+          <a href="mailto:vineettiwari971@gmail.com" class="contact-icon-item copy-btn" data-copy="vineettiwari971@gmail.com" data-tooltip="Email: vineettiwari971@gmail.com" aria-label="Send Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/vineet-tiwari971/" target="_blank" rel="noopener noreferrer" class="contact-icon-item" data-tooltip="LinkedIn Profile" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/Vineetiitg" target="_blank" rel="noopener noreferrer" class="contact-icon-item" data-tooltip="GitHub: @Vineetiitg" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+          </a>
+
+          <!-- Twitter / X -->
+          <a href="https://x.com/VINEETTIWARI971" target="_blank" rel="noopener noreferrer" class="contact-icon-item" data-tooltip="X: @VINEETTIWARI971" aria-label="Twitter / X">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+
+          <!-- Phone / WhatsApp -->
+          <a href="tel:+919516608788" class="contact-icon-item copy-btn" data-copy="+919516608788" data-tooltip="Phone: +91-9516608788" aria-label="Phone Call / Copy">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <span>Vineet Tiwari &bull; Gwalior, India</span>
+      <span>Built with clarity &bull; &copy; 2026</span>
+    </div>
+  </footer>
+
+  <!-- Toast element for copy confirmation -->
+  <div class="toast-container" id="toast" role="status" aria-live="polite">Copied to clipboard!</div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
