@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="grad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#2d2925" />
+      <stop offset="100%" stop-color="#191816" />
+    </radialGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d97706" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#b45309" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="96" fill="url(#grad)" stroke="url(#glow)" stroke-width="2"/>
+  <circle cx="100" cy="78" r="34" fill="#38332d" stroke="#524a42" stroke-width="1.5"/>
+  <path d="M42 166 C52 126, 148 126, 158 166 Z" fill="#38332d" stroke="#524a42" stroke-width="1.5"/>
+  <text x="100" y="86" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="600" fill="#e8e4df" text-anchor="middle">VT</text>
+</svg>
+
