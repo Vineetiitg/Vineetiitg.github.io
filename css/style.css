@@ -1,73 +1,73 @@
 /* ==========================================================================
    VINEET TIWARI PORTFOLIO — THEME SYSTEM
-   Minimalist Dual-Theme: Deep Oceanic Teal & Pale Sage Celadon
+   Minimalist Dual-Theme: Charcoal Black & Clean Alabaster White
    ========================================================================== */
 
-/* --- DARK THEME (DEFAULT) --- */
+/* --- DARK THEME (DEFAULT: CHARCOAL BLACK) --- */
 :root,
 :root[data-theme="dark"] {
-  --bg-base: rgb(4, 13, 18);                     /* #040d12: Darkest Teal/Black */
-  --bg-surface: #0a1e24;
-  --bg-surface-elevated: #102a32;
-  --bg-tag: #0e2329;
-  --header-bg: rgba(4, 13, 18, 0.88);
-  --header-scrolled: rgba(4, 13, 18, 0.98);
+  --bg-base: #121214;                            /* Rich Charcoal Black */
+  --bg-surface: #1a1a1e;                         /* Charcoal Card Surface */
+  --bg-surface-elevated: #222228;                /* Elevated Card Header */
+  --bg-tag: #202026;                             /* Tag Background */
+  --header-bg: rgba(18, 18, 20, 0.88);
+  --header-scrolled: rgba(18, 18, 20, 0.98);
   
-  --border-subtle: rgba(24, 61, 61, 0.6);
-  --border-default: rgb(24, 61, 61);             /* #183d3d: Deep Blue/Teal */
-  --border-hover: rgb(114, 156, 140);            /* #729c8c: Light Gray/Sage */
-  --border-accent: rgba(162, 189, 179, 0.6);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-default: rgba(255, 255, 255, 0.14);   /* Subtle Silver-Zinc Border */
+  --border-hover: rgba(255, 255, 255, 0.35);
+  --border-accent: rgba(255, 255, 255, 0.28);
 
-  --text-primary: rgb(162, 189, 179);            /* #a2bdb3: Lightest Blue/Sage */
-  --text-secondary: rgb(114, 156, 140);          /* #729c8c: Light Gray/Teal */
-  --text-muted: #537769;
+  --text-primary: #f4f4f5;                       /* Crisp Off-White */
+  --text-secondary: #a1a1aa;                     /* Balanced Neutral Zinc */
+  --text-muted: #71717a;
   
-  --accent-primary: rgb(162, 189, 179);          /* #a2bdb3 */
-  --accent-light: #c2dcd2;
-  --accent-dark: rgb(114, 156, 140);
-  --accent-subtle: rgba(162, 189, 179, 0.14);
+  --accent-primary: #f4f4f5;
+  --accent-light: #ffffff;
+  --accent-dark: #d4d4d8;
+  --accent-subtle: rgba(255, 255, 255, 0.08);
 
-  --btn-primary-bg: rgb(162, 189, 179);
-  --btn-primary-text: rgb(4, 13, 18);
+  --btn-primary-bg: #f4f4f5;
+  --btn-primary-text: #121214;
 
-  --status-online: #5eead4;
-  --status-glow: rgba(94, 234, 212, 0.4);
-  --code-bg: #0c2127;
-  --code-text: rgb(162, 189, 179);
-  --card-shadow: 0 8px 32px rgba(2, 8, 11, 0.7);
+  --status-online: #10b981;                      /* Emerald Glow */
+  --status-glow: rgba(16, 185, 129, 0.4);
+  --code-bg: #1e1e24;
+  --code-text: #e4e4e7;
+  --card-shadow: 0 8px 32px rgba(0, 0, 0, 0.55);
 }
 
-/* --- LIGHT THEME --- */
+/* --- LIGHT THEME (CLEAN ALABASTER WHITE) --- */
 :root[data-theme="light"] {
-  --bg-base: rgb(162, 189, 179);                 /* #a2bdb3: Lightest Blue/Pale Grayish-Green */
-  --bg-surface: #92b4a7;
-  --bg-surface-elevated: #83a79a;
-  --bg-tag: #8bb0a2;
-  --header-bg: rgba(162, 189, 179, 0.90);
-  --header-scrolled: rgba(146, 180, 167, 0.98);
+  --bg-base: #f8f9fa;                            /* Soft Alabaster Canvas */
+  --bg-surface: #ffffff;                         /* Pure Crisp White Cards */
+  --bg-surface-elevated: #f1f3f5;                /* Light Gray Elevated */
+  --bg-tag: #e9ecef;
+  --header-bg: rgba(248, 249, 250, 0.90);
+  --header-scrolled: rgba(255, 255, 255, 0.98);
   
-  --border-subtle: rgba(24, 61, 61, 0.3);
-  --border-default: rgba(24, 61, 61, 0.55);      /* Deep Spruce Borders */
-  --border-hover: rgb(4, 13, 18);
-  --border-accent: rgb(4, 13, 18);
+  --border-subtle: rgba(0, 0, 0, 0.06);
+  --border-default: #e2e8f0;                     /* Crisp Slate Gray Border */
+  --border-hover: #0f172a;
+  --border-accent: #0f172a;
 
-  --text-primary: rgb(4, 13, 18);                /* #040d12: Darkest Blue/Black */
-  --text-secondary: rgb(24, 61, 61);             /* #183d3d: Deep Blue/Teal */
-  --text-muted: #2d5854;
+  --text-primary: #0f172a;                       /* Deep Slate / Charcoal */
+  --text-secondary: #475569;                     /* Slate Gray Secondary */
+  --text-muted: #64748b;
   
-  --accent-primary: rgb(4, 13, 18);              /* #040d12 */
-  --accent-light: rgb(24, 61, 61);
+  --accent-primary: #0f172a;
+  --accent-light: #1e293b;
   --accent-dark: #000000;
-  --accent-subtle: rgba(4, 13, 18, 0.12);
+  --accent-subtle: rgba(15, 23, 42, 0.06);
 
-  --btn-primary-bg: rgb(4, 13, 18);
-  --btn-primary-text: rgb(162, 189, 179);
+  --btn-primary-bg: #0f172a;
+  --btn-primary-text: #ffffff;
 
-  --status-online: rgb(24, 61, 61);
-  --status-glow: rgba(24, 61, 61, 0.3);
-  --code-bg: #89ae9f;
-  --code-text: rgb(4, 13, 18);
-  --card-shadow: 0 4px 20px rgba(18, 48, 44, 0.16);
+  --status-online: #059669;
+  --status-glow: rgba(5, 150, 105, 0.3);
+  --code-bg: #f1f5f9;
+  --code-text: #0f172a;
+  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 
 /* Shared Design Tokens */
