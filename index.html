@@ -196,39 +196,7 @@
 
         <div class="projects-list">
 
-          <!-- PROJECT 1: SafeChat -->
-          <article class="project-artifact">
-            <div class="artifact-top-bar">
-              <span class="artifact-name">SafeChat &mdash; Real-Time Multilingual Toxic Chat Moderation &amp; Detoxification System</span>
-              <div class="artifact-links">
-                <a href="https://github.com/Vineetiitg/Real-time-Toxic-Chat-Moderation-System" target="_blank" rel="noopener noreferrer" class="link-item">GitHub &nearr;</a>
-                <a href="https://13-48-162-212.sslip.io" target="_blank" rel="noopener noreferrer" class="link-item highlight">Live Demo &nearr;</a>
-              </div>
-            </div>
-
-            <div class="project-content">
-              <div class="project-tags">
-                <span class="tech-tag">PyTorch</span>
-                <span class="tech-tag">Hugging Face</span>
-                <span class="tech-tag">LoRA / PEFT</span>
-                <span class="tech-tag">FastAPI</span>
-                <span class="tech-tag">Gemini 2.5</span>
-                <span class="tech-tag">Docker</span>
-                <span class="tech-tag">WebSockets</span>
-                <span class="tech-tag">AWS EC2</span>
-              </div>
-
-              <ul class="bullet-list">
-                <li><strong>Architected a Dual-Tier Hybrid Moderation Pipeline:</strong> Engineered a real-time moderation engine combining a sub-50ms edge transformer classifier with a foundational LLM arbitrator for high-throughput live chat rooms.</li>
-                <li><strong>Domain Adaptation with LoRA:</strong> Fine-tuned <code>hing-roberta</code> on code-mixed Hinglish and Devanagari Hindi using Parameter-Efficient Fine-Tuning (LoRA), slashing trainable parameters by <strong>98.2%</strong> while achieving a <strong>0.7154 Macro F1</strong> and <strong>0.9451 ROC-AUC</strong>.</li>
-                <li><strong>Eliminated False Positives via Contextual Arbitration:</strong> Built a zero-shot LLM reasoning layer to disambiguate harmless colloquial slang (e.g., <em>"killer move"</em>), reducing false-positive censorship to zero.</li>
-                <li><strong>Linguistic Style-Transfer Detoxification:</strong> Designed an intent-preserving detox engine that automatically rewrites abusive messages into polite phrasing while strictly maintaining the user's native script (Roman Hinglish, Devanagari, English).</li>
-                <li><strong>Hardened Cloud Deployment on AWS EC2:</strong> Containerized the full-stack system using Docker and FastAPI, orchestrating real-time bidirectional WebSockets reverse-proxied with Caddy automated TLS/SSL.</li>
-              </ul>
-            </div>
-          </article>
-
-          <!-- PROJECT 2: Agentic Support Copilot -->
+          <!-- PROJECT 1: Agentic Support Copilot -->
           <article class="project-artifact">
             <div class="artifact-top-bar">
               <span class="artifact-name">Agentic Support Copilot &mdash; Enterprise RAG &amp; Distributed AI System</span>
@@ -258,6 +226,38 @@
                 <li><strong>Semantic Caching Layer:</strong> Architected a Redis semantic caching layer with intent-keyword isolation (cosine similarity &ge; 0.94), achieving <strong>&lt; 100ms</strong> response times on repeated queries while preventing semantic cache bleed across distinct entities.</li>
                 <li><strong>Self-Correcting Reflection Loops:</strong> Designed self-correcting reflection loops using an LLM-as-a-Judge groundedness gate, cross-encoder reranking (Cohere + local ONNX FlashRank fallback), and regex guardrails that blocked <strong>100%</strong> of out-of-domain requests.</li>
                 <li><strong>Distributed Cloud Microservices:</strong> Deployed containerized microservices to AWS EC2 using Docker Compose, Caddy reverse-proxy (automated SSL), and an asynchronous Arq background task queue for non-blocking document ingestion and RAGAS evaluations.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: SafeChat -->
+          <article class="project-artifact">
+            <div class="artifact-top-bar">
+              <span class="artifact-name">SafeChat &mdash; Real-Time Multilingual Toxic Chat Moderation &amp; Detoxification System</span>
+              <div class="artifact-links">
+                <a href="https://github.com/Vineetiitg/Real-time-Toxic-Chat-Moderation-System" target="_blank" rel="noopener noreferrer" class="link-item">GitHub &nearr;</a>
+                <a href="https://13-48-162-212.sslip.io" target="_blank" rel="noopener noreferrer" class="link-item highlight">Live Demo &nearr;</a>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">Hugging Face</span>
+                <span class="tech-tag">LoRA / PEFT</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">Gemini 2.5</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">WebSockets</span>
+                <span class="tech-tag">AWS EC2</span>
+              </div>
+
+              <ul class="bullet-list">
+                <li><strong>Architected a Dual-Tier Hybrid Moderation Pipeline:</strong> Engineered a real-time moderation engine combining a sub-50ms edge transformer classifier with a foundational LLM arbitrator for high-throughput live chat rooms.</li>
+                <li><strong>Domain Adaptation with LoRA:</strong> Fine-tuned <code>hing-roberta</code> on code-mixed Hinglish and Devanagari Hindi using Parameter-Efficient Fine-Tuning (LoRA), slashing trainable parameters by <strong>98.2%</strong> while achieving a <strong>0.7154 Macro F1</strong> and <strong>0.9451 ROC-AUC</strong>.</li>
+                <li><strong>Eliminated False Positives via Contextual Arbitration:</strong> Built a zero-shot LLM reasoning layer to disambiguate harmless colloquial slang (e.g., <em>"killer move"</em>), reducing false-positive censorship to zero.</li>
+                <li><strong>Linguistic Style-Transfer Detoxification:</strong> Designed an intent-preserving detox engine that automatically rewrites abusive messages into polite phrasing while strictly maintaining the user's native script (Roman Hinglish, Devanagari, English).</li>
+                <li><strong>Hardened Cloud Deployment on AWS EC2:</strong> Containerized the full-stack system using Docker and FastAPI, orchestrating real-time bidirectional WebSockets reverse-proxied with Caddy automated TLS/SSL.</li>
               </ul>
             </div>
           </article>
