@@ -83,8 +83,8 @@
       <a href="#contact" class="mobile-nav-link">Contact</a>
       <div class="mobile-drawer-footer">
         <button class="btn btn-secondary btn-full mobile-theme-btn" id="mobileThemeToggle">
-          <span class="theme-text-dark">Switch to Pale Gray-Green Mode</span>
-          <span class="theme-text-light">Switch to Pitch Black Mode</span>
+          <span class="theme-text-dark">Switch to Light Mode</span>
+          <span class="theme-text-light">Switch to Charcoal Dark Mode</span>
         </button>
         <a href="mailto:vineettiwari971@gmail.com" class="btn btn-primary btn-full" style="margin-top: 10px;">Email Vineet</a>
       </div>
@@ -99,16 +99,16 @@
         
         <div class="status-pill animate-fade-in">
           <span class="status-dot"></span>
-          <span>Open for Summer 2026 SWE & AI/ML Internships</span>
+          <span>Building AI systems &bull; Learning in public</span>
         </div>
 
         <h1 class="hero-name animate-fade-in delay-1">Vineet Tiwari</h1>
         <p class="hero-tagline animate-fade-in delay-2">
-          AI/ML Engineer &bull; Dual-Degree Scholar in CS &amp; AI
+          CS &amp; AI Undergrad &bull; Full-Stack AI Engineer
         </p>
 
         <p class="hero-bio animate-fade-in delay-2">
-          Pursuing concurrent degrees at <strong>IIT Guwahati</strong> and <strong>MITS Gwalior</strong>. I design self-correcting agentic workflows, hybrid RAG pipelines, fine-tuned NLP transformers, and low-latency microservices.
+          Hey there! 👋 I'm a CS &amp; AI student concurrently at <strong>IIT Guwahati</strong> and <strong>MITS Gwalior</strong>. I like building real-world AI systems &mdash; self-correcting RAG agents, real-time multilingual NLP, and fast microservices. Feel free to explore my work below or connect!
         </p>
 
         <div class="hero-actions animate-fade-in delay-3">
@@ -157,6 +157,13 @@
             <div class="edu-grade">CGPA: 8.3 / 10.0</div>
           </div>
 
+          <div class="edu-card">
+            <div class="edu-year">2026</div>
+            <h3 class="edu-degree">2nd in Manthan'26</h3>
+            <div class="edu-school">National Tech &amp; Innovation Hackathon (MANIT Bhopal)</div>
+            <div class="edu-grade">1st Runner-Up (500+ Teams)</div>
+          </div>
+
         </div>
 
         <!-- Quick Summary Stats Strip -->
@@ -170,15 +177,14 @@
             <span class="stat-label">Toxicity ROC-AUC</span>
           </div>
           <div class="stat-item">
-            <span class="stat-number">&lt;10ms</span>
+            <span class="stat-number">&lt;100ms</span>
             <span class="stat-label">Cache Latency</span>
           </div>
           <div class="stat-item">
-            <span class="stat-number">Top 4</span>
-            <span class="stat-label">Hacksagon '26</span>
+            <span class="stat-number">2nd</span>
+            <span class="stat-label">Manthan '26</span>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -225,7 +231,7 @@
           <!-- PROJECT 2: Agentic Support Copilot -->
           <article class="project-artifact">
             <div class="artifact-top-bar">
-              <span class="artifact-name">Agentic Support Copilot &mdash; Self-Correcting AI Assistant</span>
+              <span class="artifact-name">Agentic Support Copilot &mdash; Enterprise RAG &amp; Distributed AI System</span>
               <div class="artifact-links">
                 <a href="https://github.com/Vineetiitg/Agentic-Support-Copilot" target="_blank" rel="noopener noreferrer" class="link-item">GitHub &nearr;</a>
                 <a href="https://support-copilot.duckdns.org" target="_blank" rel="noopener noreferrer" class="link-item highlight">Live Demo &nearr;</a>
@@ -235,19 +241,23 @@
             <div class="project-content">
               <div class="project-tags">
                 <span class="tech-tag">Python</span>
-                <span class="tech-tag">LangGraph</span>
                 <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">LangGraph</span>
                 <span class="tech-tag">Qdrant</span>
                 <span class="tech-tag">Redis</span>
+                <span class="tech-tag">Cohere Rerank</span>
                 <span class="tech-tag">Docker</span>
-                <span class="tech-tag">Guardrails AI</span>
+                <span class="tech-tag">AWS EC2</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
               </div>
 
               <ul class="bullet-list">
-                <li>Built a cyclic <strong>LangGraph</strong> state machine with Function Calling that self-grades responses to suppress hallucination.</li>
-                <li>Implemented hybrid RAG combining dense &amp; sparse search in <strong>Qdrant</strong> with FlashRank/Cohere reranking.</li>
-                <li>Added Redis semantic vector caching for <strong>&lt;10ms</strong> repeated query responses and asynchronous Arq worker ingestion.</li>
-                <li>Enforced production security using Guardrails AI, JWT authentication, RBAC, and automated PII redaction.</li>
+                <li><strong>Enterprise Agentic RAG Architecture:</strong> Engineered an enterprise Agentic RAG copilot using FastAPI, LangGraph, and Qdrant to automate technical documentation support with verifiable per-sentence source citations and zero hallucinations.</li>
+                <li><strong>Hybrid Search &amp; RRF Decomposition:</strong> Implemented Reciprocal Rank Fusion (RRF) and sub-query decomposition, resolving complex multi-topic customer queries and elevating Context Recall to <strong>100% (1.00)</strong> and Answer Correctness to <strong>85.3%</strong> on a 55-question golden benchmark.</li>
+                <li><strong>Semantic Caching Layer:</strong> Architected a Redis semantic caching layer with intent-keyword isolation (cosine similarity &ge; 0.94), achieving <strong>&lt; 100ms</strong> response times on repeated queries while preventing semantic cache bleed across distinct entities.</li>
+                <li><strong>Self-Correcting Reflection Loops:</strong> Designed self-correcting reflection loops using an LLM-as-a-Judge groundedness gate, cross-encoder reranking (Cohere + local ONNX FlashRank fallback), and regex guardrails that blocked <strong>100%</strong> of out-of-domain requests.</li>
+                <li><strong>Distributed Cloud Microservices:</strong> Deployed containerized microservices to AWS EC2 using Docker Compose, Caddy reverse-proxy (automated SSL), and an asynchronous Arq background task queue for non-blocking document ingestion and RAGAS evaluations.</li>
               </ul>
             </div>
           </article>
@@ -364,7 +374,7 @@
         <div class="section-badge">05 // Contact</div>
         <h2 class="section-heading">Get in Touch</h2>
         <p class="section-subtext">
-          Currently open to Summer 2026 internships and collaborative engineering opportunities.
+          Always open to interesting conversations, collaborative engineering projects, and technical discussions.
         </p>
 
         <div class="contact-icons-dock">
