@@ -1,135 +1,72 @@
 # Vineet Tiwari — AI/ML Engineer Portfolio
 
-A modern, high-performance developer portfolio featuring a **"Claude Editorial Dark"** aesthetic. Crafted with clean semantic HTML5, modern vanilla CSS with design tokens, and lightweight JavaScript. Zero bloated dependencies, zero build steps, and lightning-fast loading speeds.
+[![Live Portfolio](https://img.shields.io/badge/Live-Portfolio-emerald?style=for-the-badge&logo=googlechrome)](https://vineetiitg.github.io)
+[![GitHub](https://img.shields.io/badge/GitHub-Vineetiitg-181717?style=for-the-badge&logo=github)](https://github.com/Vineetiitg)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-vineet--tiwari971-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/vineet-tiwari971/)
+
+A high-performance personal portfolio showcasing enterprise AI/ML systems, distributed agents, and real-time NLP moderation. Built with semantic HTML5, modern CSS design tokens, and lightweight JavaScript—zero bloated dependencies, zero build steps, and instant loading speeds.
 
 ---
 
-## 🎨 Design System: Dual Bold Theme System
-- **Dark Mode (Default):** True OLED pitch black (`#000000`) background with ultra-dark card surfaces (`#0c0c0c`), crisp border lines, and electric amber/gold accents (`#f59e0b`).
-- **Light Mode:** Pale grayish-green canvas (`#d8e2d8`) with soft sage surfaces (`#c9d5c9`) and deep forest emerald accents (`#1b5e39`) &mdash; clean, organic, and easy on the eyes.
-- **Social & Contact Dock:** Minimalist icon-only controls for GitHub, LinkedIn, Twitter/X, and Email with tooltips and one-click copy.
-- **Theme Switcher:** Seamless header toggle with animated Sun/Moon icons, state persistence via `localStorage`, and zero flash on load.
+## 🎨 Design System
+
+- **Dark Theme (Default):** Rich Charcoal Black (`#121214`) canvas with elevated zinc surfaces (`#1a1a1e` / `#222228`), crisp borders, and off-white typography (`#f4f4f5`).
+- **Light Theme:** Soft Alabaster White canvas (`#f8f9fa`) with pure white card surfaces (`#ffffff`), slate borders, and deep charcoal text (`#0f172a`).
+- **Interactive Dock:** Minimalist social controls with animated hover states, instant tooltips, and one-click email copying.
+- **Theme Switcher:** Seamless header toggle with animated Sun/Moon icons, state persistence via `localStorage`, and zero flash on initial load.
 
 ---
 
-## 📁 Project Architecture
+## 🚀 Featured Projects
+
+### 1. Agentic Support Copilot — Enterprise RAG & Distributed AI System
+- **Tech Stack:** Python, FastAPI, LangGraph, Qdrant Vector DB, Redis, Cohere Rerank, Docker, AWS EC2, React, TypeScript
+- **Live Demo:** [https://support-copilot.duckdns.org](https://support-copilot.duckdns.org)
+- **GitHub:** [Vineetiitg/Agentic-Support-Copilot](https://github.com/Vineetiitg/Agentic-Support-Copilot)
+- **Highlights:** Sub-100ms semantic caching, Reciprocal Rank Fusion (RRF), sub-query decomposition elevating Context Recall to 100% (1.00), and self-correcting reflection loops with zero hallucinations.
+
+### 2. SafeChat — Real-Time Multilingual Toxic Chat Moderation System
+- **Tech Stack:** PyTorch, Hugging Face, LoRA / PEFT, FastAPI, Gemini 2.5, Docker, WebSockets, AWS EC2
+- **Live Demo:** [https://13-48-162-212.sslip.io](https://13-48-162-212.sslip.io)
+- **Hugging Face Model:** [vineet88/hingbert-toxicity-finetuned](https://huggingface.co/vineet88/hingbert-toxicity-finetuned)
+- **GitHub:** [Vineetiitg/Real-time-Toxic-Chat-Moderation-System](https://github.com/Vineetiitg/Real-time-Toxic-Chat-Moderation-System)
+- **Highlights:** Sub-50ms fine-tuned HingBERT multi-label toxicity classification (94.2% Hinglish accuracy) paired with streaming intent-preserving polite alternative rewrites via WebSockets.
+
+---
+
+## 📁 Repository Structure
 
 ```
-Vineet_Portfolio/
-├── index.html              # Core single-page portfolio layout
+Vineetiitg.github.io/
+├── index.html              # Core single-page portfolio layout & semantic markup
 ├── css/
-│   └── style.css           # Complete design tokens, responsive rules & styles
+│   └── style.css           # Design tokens, Charcoal Black & Alabaster White themes
 ├── js/
-│   └── main.js             # Vanilla JS for header blur, active nav, drawer & copy
-├── assets/
-│   ├── favicon.svg         # Monospace "VT" warm amber favicon
-│   └── avatar-placeholder.svg  # Minimalist avatar graphic
-├── deploy-aws.ps1          # Windows PowerShell script for AWS S3 + CloudFront sync
-├── deploy-aws.sh           # Bash deployment script for Linux/macOS
-├── commits.md              # Clean, interval-based Git commit script & messages
-└── README.md               # Complete setup, GitHub Pages & AWS deployment guide
+│   └── main.js             # Vanilla JS for header blur, theme toggle & interaction
+└── assets/
+    ├── favicon.svg         # Monospace "VT" warm amber favicon
+    └── avatar-placeholder.svg  # Minimalist avatar graphic
 ```
 
 ---
 
 ## 💻 Local Preview
 
-You do not need Node.js or any build tool to run this site. Simply open `index.html` in any modern web browser, or serve it with Python/VS Code:
+No package managers or build tools are required. Open `index.html` directly in your browser or run a lightweight local server:
 
 ```bash
 # Using Python built-in HTTP server:
 python -m http.server 8000
 ```
-Then visit: `http://localhost:8000`
+Then open `http://localhost:8000` in your browser.
 
 ---
 
-## 🌐 Deployment Method 1: GitHub Pages (Free `Vineetiitg.github.io`)
+## 📬 Contact & Connect
 
-GitHub Pages gives you a completely free, fast, SSL-secured domain under `https://Vineetiitg.github.io`.
-
-### Step 1: Create the Special Repository on GitHub
-1. Log in to [GitHub](https://github.com).
-2. Click **New Repository** (or visit [github.com/new](https://github.com/new)).
-3. Under **Repository name**, enter **exactly**:
-   ```
-   Vineetiitg.github.io
-   ```
-4. Set the visibility to **Public**.
-5. Leave "Add a README file" unchecked (you already have this project).
-6. Click **Create repository**.
-
-### Step 2: Push Your Code
-Follow the sequential commit steps in [`commits.md`](./commits.md), then push to GitHub:
-
-```bash
-git remote add origin https://github.com/Vineetiitg/Vineetiitg.github.io.git
-git branch -M main
-git push -u origin main
-```
-
-### Step 3: Verify GitHub Pages Settings
-1. Go to your repository on GitHub $\rightarrow$ **Settings** $\rightarrow$ **Pages** (in the left sidebar).
-2. Under **Build and deployment**:
-   - **Source:** `Deploy from a branch`
-   - **Branch:** `main` / `root`
-3. Click **Save**.
-4. Within 60 seconds, GitHub Pages will deploy your website to `https://<your-github-username>.github.io`.
-
----
-
-## ☁️ Deployment Method 2: AWS (S3 + CloudFront + ACM)
-
-For production hosting with AWS global Edge CDN distribution and custom domains:
-
-### Phase 1: Create a Private S3 Bucket
-1. Go to the **Amazon S3 Console** $\rightarrow$ **Create bucket**.
-2. Name your bucket (e.g., `vineet-portfolio-production`).
-3. Select your preferred AWS Region (e.g., `ap-south-1` for Mumbai).
-4. Keep **Block all public access** checked (CloudFront will access it securely via Origin Access Control).
-5. Click **Create bucket**.
-
-### Phase 2: Create a CloudFront Distribution
-1. Go to the **CloudFront Console** $\rightarrow$ **Create distribution**.
-2. **Origin domain:** Select your newly created S3 bucket.
-3. **Origin access:** Select **Origin access control (OAC)** $\rightarrow$ Click **Create control setting** $\rightarrow$ Save.
-4. **Default cache behavior:**
-   - **Viewer protocol policy:** `Redirect HTTP to HTTPS`.
-   - **Allowed HTTP methods:** `GET, HEAD`.
-5. **Default root object:** Enter `index.html`.
-6. Click **Create distribution**.
-7. In the top notification banner, click **Copy policy**, then navigate to your S3 bucket $\rightarrow$ **Permissions** $\rightarrow$ **Bucket policy** $\rightarrow$ paste the copied policy and save.
-
-### Phase 3: Automated One-Click Deployment
-Whenever you make updates, run the included deployment script:
-
-**On Windows (PowerShell):**
-```powershell
-.\deploy-aws.ps1 -BucketName "vineet-portfolio-production" -DistributionId "YOUR_CLOUDFRONT_DIST_ID"
-```
-
-**On Linux / macOS (Bash):**
-```bash
-chmod +x deploy-aws.sh
-./deploy-aws.sh vineet-portfolio-production YOUR_CLOUDFRONT_DIST_ID
-```
-
----
-
-## 📝 Managing Your Git Commits
-To keep your Git commit history clean and reflective of thoughtful engineering:
-- Refer to [`commits.md`](./commits.md).
-- It breaks down the repository into 6 semantic, conventional commits (`feat(scaffold)`, `feat(styles)`, `feat(scripts)`, `feat(content)`, `chore(deploy)`, `docs`).
-- You can execute each commit command one by one at your own pace before pushing.
-
----
-
-## 📬 Contact & Inquiries
 - **Developer:** Vineet Tiwari
 - **Email:** [vineettiwari971@gmail.com](mailto:vineettiwari971@gmail.com)
-- **Phone:** +91-9516608788
-- **GitHub:** [github.com/Vineetiitg](https://github.com/Vineetiitg)
+- **GitHub:** [@Vineetiitg](https://github.com/Vineetiitg)
 - **LinkedIn:** [linkedin.com/in/vineet-tiwari971](https://www.linkedin.com/in/vineet-tiwari971/)
-- **Twitter / X:** [x.com/VINEETTIWARI971](https://x.com/VINEETTIWARI971)
+- **Twitter / X:** [@VINEETTIWARI971](https://x.com/VINEETTIWARI971)
 - **Location:** Gwalior, Madhya Pradesh, India
-
