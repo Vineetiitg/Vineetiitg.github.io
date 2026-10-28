@@ -4,7 +4,7 @@
 [![GitHub](https://img.shields.io/badge/GitHub-Vineetiitg-181717?style=for-the-badge&logo=github)](https://github.com/Vineetiitg)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-vineet--tiwari971-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/vineet-tiwari971/)
 
-A high-performance personal portfolio showcasing enterprise AI/ML systems, distributed agents, and real-time NLP moderation. Built with semantic HTML5, modern CSS design tokens, and lightweight JavaScript—zero bloated dependencies, zero build steps, and instant loading speeds.
+Hey, welcome! 👋 Explore the real-time AI systems, autonomous agents, and live demos I've built.
 
 ---
 
