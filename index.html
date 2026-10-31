@@ -36,6 +36,7 @@
 
       <!-- Desktop Nav -->
       <nav class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-link active">Home</a>
         <a href="#about" class="nav-link">About</a>
         <a href="#projects" class="nav-link">Projects</a>
         <a href="#skills" class="nav-link">Skills</a>
@@ -62,7 +63,7 @@
           </svg>
         </button>
 
-        <a href="mailto:vineettiwari971@gmail.com" class="btn btn-outline btn-sm">
+        <a href="#contact" class="btn btn-outline btn-sm">
           <span>Get in Touch</span>
         </a>
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
@@ -76,6 +77,7 @@
   <!-- Mobile Drawer -->
   <div class="mobile-drawer" id="mobileDrawer">
     <nav class="mobile-nav">
+      <a href="#hero" class="mobile-nav-link active">Home</a>
       <a href="#about" class="mobile-nav-link">About</a>
       <a href="#projects" class="mobile-nav-link">Projects</a>
       <a href="#skills" class="mobile-nav-link">Skills</a>
@@ -86,7 +88,7 @@
           <span class="theme-text-dark">Switch to Light Mode</span>
           <span class="theme-text-light">Switch to Charcoal Dark Mode</span>
         </button>
-        <a href="mailto:vineettiwari971@gmail.com" class="btn btn-primary btn-full" style="margin-top: 10px;">Email Vineet</a>
+        <a href="#contact" class="btn btn-primary btn-full" style="margin-top: 10px;">Get in Touch</a>
       </div>
     </nav>
   </div>
@@ -94,7 +96,7 @@
   <main id="main-content">
 
     <!-- HERO SECTION (Minimalist & Direct) -->
-    <section class="section hero-section" id="hero">
+    <section class="section hero-section active-section" id="hero">
       <div class="container hero-container">
         
         <div class="status-pill animate-fade-in">
@@ -114,7 +116,11 @@
         <div class="hero-actions animate-fade-in delay-3">
           <a href="#projects" class="btn btn-primary">
             <span>View Projects</span>
-            <span class="btn-arrow">&darr;</span>
+            <span class="btn-arrow">&rarr;</span>
+          </a>
+          <a href="#about" class="btn btn-secondary">
+            <span>About &amp; Education</span>
+            <span class="btn-arrow">&rarr;</span>
           </a>
           <div class="social-icons-strip">
             <a href="https://github.com/Vineetiitg" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile" title="GitHub">
@@ -184,6 +190,12 @@
             <span class="stat-number">2nd</span>
             <span class="stat-label">Manthan '26</span>
           </div>
+        </div>
+
+        <!-- Section Navigation Footer -->
+        <div class="section-nav-footer">
+          <a href="#hero" class="btn btn-secondary btn-sm">&larr; Home</a>
+          <a href="#projects" class="btn btn-primary btn-sm">View Projects &rarr;</a>
         </div>
       </div>
     </section>
@@ -263,6 +275,12 @@
           </article>
 
         </div>
+
+        <!-- Section Navigation Footer -->
+        <div class="section-nav-footer">
+          <a href="#about" class="btn btn-secondary btn-sm">&larr; About &amp; Education</a>
+          <a href="#skills" class="btn btn-primary btn-sm">Technical Skills &rarr;</a>
+        </div>
       </div>
     </section>
 
@@ -329,6 +347,12 @@
           </div>
 
         </div>
+
+        <!-- Section Navigation Footer -->
+        <div class="section-nav-footer">
+          <a href="#projects" class="btn btn-secondary btn-sm">&larr; Featured Projects</a>
+          <a href="#achievements" class="btn btn-primary btn-sm">Achievements &rarr;</a>
+        </div>
       </div>
     </section>
 
@@ -364,6 +388,12 @@
             </div>
           </div>
 
+        </div>
+
+        <!-- Section Navigation Footer -->
+        <div class="section-nav-footer">
+          <a href="#skills" class="btn btn-secondary btn-sm">&larr; Technical Skills</a>
+          <a href="#contact" class="btn btn-primary btn-sm">Get in Touch &rarr;</a>
         </div>
       </div>
     </section>
@@ -415,6 +445,12 @@
             </svg>
           </a>
 
+        </div>
+
+        <!-- Section Navigation Footer -->
+        <div class="section-nav-footer">
+          <a href="#achievements" class="btn btn-secondary btn-sm">&larr; Achievements</a>
+          <a href="#hero" class="btn btn-primary btn-sm">Back to Home &rarr;</a>
         </div>
 
       </div>
