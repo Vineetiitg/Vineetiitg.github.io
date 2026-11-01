@@ -21,13 +21,13 @@ Hey, welcome! 👋 Explore the real-time AI systems, autonomous agents, and live
 
 ### 1. Agentic Support Copilot — Enterprise RAG & Distributed AI System
 - **Tech Stack:** Python, FastAPI, LangGraph, Qdrant Vector DB, Redis, Cohere Rerank, Docker, AWS EC2, React, TypeScript
-- **Live Demo:** [https://support-copilot.duckdns.org](https://support-copilot.duckdns.org)
+- **Live Demo:** [https://supportcopilot.me](https://supportcopilot.me)
 - **GitHub:** [Vineetiitg/Agentic-Support-Copilot](https://github.com/Vineetiitg/Agentic-Support-Copilot)
 - **Highlights:** Sub-100ms semantic caching, Reciprocal Rank Fusion (RRF), sub-query decomposition elevating Context Recall to 100% (1.00), and self-correcting reflection loops with zero hallucinations.
 
 ### 2. SafeChat — Real-Time Multilingual Toxic Chat Moderation System
 - **Tech Stack:** PyTorch, Hugging Face, LoRA / PEFT, FastAPI, Gemini 2.5, Docker, WebSockets, AWS EC2
-- **Live Demo:** [https://13-48-162-212.sslip.io](https://13-48-162-212.sslip.io)
+- **Live Demo:** [https://safechat.supportcopilot.me](https://safechat.supportcopilot.me)
 - **Hugging Face Model:** [vineet88/hingbert-toxicity-finetuned](https://huggingface.co/vineet88/hingbert-toxicity-finetuned)
 - **GitHub:** [Vineetiitg/Real-time-Toxic-Chat-Moderation-System](https://github.com/Vineetiitg/Real-time-Toxic-Chat-Moderation-System)
 - **Highlights:** Sub-50ms fine-tuned HingBERT multi-label toxicity classification (94.2% Hinglish accuracy) paired with streaming intent-preserving polite alternative rewrites via WebSockets.
