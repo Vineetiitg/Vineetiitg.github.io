@@ -236,9 +236,9 @@
               <ul class="bullet-list">
                 <li><strong>Enterprise Agentic RAG Architecture:</strong> Engineered an enterprise Agentic RAG copilot using FastAPI, LangGraph, and Qdrant to automate technical documentation support with verifiable per-sentence source citations and zero hallucinations.</li>
                 <li><strong>Hybrid Search &amp; RRF Decomposition:</strong> Implemented Reciprocal Rank Fusion (RRF) and sub-query decomposition, resolving complex multi-topic customer queries and elevating Context Recall to <strong>100% (1.00)</strong> and Answer Correctness to <strong>85.3%</strong> on a 55-question golden benchmark.</li>
-                <li><strong>Semantic Caching Layer:</strong> Architected a Redis semantic caching layer with intent-keyword isolation (cosine similarity &ge; 0.94), achieving <strong>&lt; 100ms</strong> response times on repeated queries while preventing semantic cache bleed across distinct entities.</li>
-                <li><strong>Self-Correcting Reflection Loops:</strong> Designed self-correcting reflection loops using an LLM-as-a-Judge groundedness gate, cross-encoder reranking (Cohere + local ONNX FlashRank fallback), and regex guardrails that blocked <strong>100%</strong> of out-of-domain requests.</li>
-                <li><strong>Distributed Cloud Microservices:</strong> Deployed containerized microservices to AWS EC2 using Docker Compose, Caddy reverse-proxy (automated SSL), and an asynchronous Arq background task queue for non-blocking document ingestion and RAGAS evaluations.</li>
+                <li><strong>Semantic Caching Layer:</strong> Architected a Redis semantic vector cache with intent-keyword isolation (cosine similarity &ge; 0.94), achieving <strong>&lt; 50ms</strong> response times on repeated queries while completely eliminating cache bleed across distinct technical entities.</li>
+                <li><strong>Multi-Tier Guardrails &amp; Agentic Reflection:</strong> Designed self-correcting reflection loops with an LLM-as-a-Judge groundedness gate, cross-encoder reranking (Cohere + ONNX FlashRank), and 3-tier production guardrails (pre-retrieval filtering, real-time PII/secret redaction, and citation isolation on refusals), achieving <strong>100%</strong> out-of-domain interception with zero phantom citation leaks.</li>
+                <li><strong>Distributed Cloud Microservices:</strong> Deployed containerized microservices to AWS EC2 using Docker Compose, Caddy reverse-proxy (automated SSL), and an asynchronous Arq background worker queue for non-blocking document ingestion and RAGAS evaluations.</li>
               </ul>
             </div>
           </article>
@@ -249,7 +249,7 @@
               <img src="assets/safechat-preview.png" alt="SafeChat Moderation Dashboard Preview" class="artifact-media-img" loading="lazy">
             </div>
             <div class="artifact-top-bar">
-              <span class="artifact-name">SafeChat &mdash; Real-Time Multilingual Toxic Chat Moderation &amp; Detoxification System</span>
+              <span class="artifact-name">SafeChat &mdash; Multilingual Toxic Chat Moderation &amp; Detoxification System</span>
               <div class="artifact-links">
                 <a href="https://github.com/Vineetiitg/Real-time-Toxic-Chat-Moderation-System" target="_blank" rel="noopener noreferrer" class="link-item">GitHub &nearr;</a>
                 <a href="https://13-48-162-212.sslip.io" target="_blank" rel="noopener noreferrer" class="link-item highlight">Live Demo &nearr;</a>
